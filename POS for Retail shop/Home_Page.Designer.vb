@@ -30,6 +30,8 @@ Partial Class Home_Page
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Home_Page))
         Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
@@ -46,15 +48,14 @@ Partial Class Home_Page
         Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
         Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         btnclosepage = New Guna.UI2.WinForms.Guna2Button()
         lblpagename = New Label()
         btnSidebox = New PictureBox()
-        lblname = New Guna.UI2.WinForms.Guna2HtmlLabel()
         SideBar = New FlowLayoutPanel()
         Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        lblname = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        pnldashboard1 = New Guna.UI2.WinForms.Guna2Button()
         pnlActivitys = New Guna.UI2.WinForms.Guna2Button()
         pnlAnalysis = New Guna.UI2.WinForms.Guna2Button()
         pnlProduct = New Guna.UI2.WinForms.Guna2Button()
@@ -66,7 +67,6 @@ Partial Class Home_Page
         sidebarTransition = New Timer(components)
         Paneldisplay = New Panel()
         PictureBox1 = New PictureBox()
-        pnldashboard1 = New Guna.UI2.WinForms.Guna2Button()
         Guna2Panel1.SuspendLayout()
         CType(btnSidebox, ComponentModel.ISupportInitialize).BeginInit()
         SideBar.SuspendLayout()
@@ -97,7 +97,7 @@ Partial Class Home_Page
         btnclosepage.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         btnclosepage.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         btnclosepage.FillColor = Color.Transparent
-        btnclosepage.Font = New Font("Tahoma", 15.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnclosepage.Font = New Font("Tahoma", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnclosepage.ForeColor = Color.Black
         btnclosepage.Location = New Point(52, 1)
         btnclosepage.Name = "btnclosepage"
@@ -111,10 +111,10 @@ Partial Class Home_Page
         ' 
         lblpagename.Anchor = AnchorStyles.Top
         lblpagename.AutoSize = True
-        lblpagename.Font = New Font("Segoe UI", 13.0F, FontStyle.Bold)
-        lblpagename.Location = New Point(957, 9)
+        lblpagename.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        lblpagename.Location = New Point(957, 7)
         lblpagename.Name = "lblpagename"
-        lblpagename.Size = New Size(63, 25)
+        lblpagename.Size = New Size(68, 28)
         lblpagename.TabIndex = 2
         lblpagename.Text = "Home"
         ' 
@@ -127,18 +127,6 @@ Partial Class Home_Page
         btnSidebox.SizeMode = PictureBoxSizeMode.CenterImage
         btnSidebox.TabIndex = 1
         btnSidebox.TabStop = False
-        ' 
-        ' lblname
-        ' 
-        lblname.AutoSize = False
-        lblname.BackColor = Color.Transparent
-        lblname.Font = New Font("Segoe UI", 20.0F, FontStyle.Bold)
-        lblname.ForeColor = Color.RoyalBlue
-        lblname.Location = New Point(9, 36)
-        lblname.Name = "lblname"
-        lblname.Size = New Size(199, 57)
-        lblname.TabIndex = 2
-        lblname.Text = "The Retail Spot"
         ' 
         ' SideBar
         ' 
@@ -154,6 +142,7 @@ Partial Class Home_Page
         SideBar.Controls.Add(pnlSupport)
         SideBar.Controls.Add(pnlLogout)
         SideBar.Dock = DockStyle.Left
+        SideBar.FlowDirection = FlowDirection.TopDown
         SideBar.Location = New Point(0, 42)
         SideBar.Margin = New Padding(10, 3, 3, 3)
         SideBar.Name = "SideBar"
@@ -171,8 +160,43 @@ Partial Class Home_Page
         Guna2Panel2.Size = New Size(231, 96)
         Guna2Panel2.TabIndex = 3
         ' 
+        ' lblname
+        ' 
+        lblname.AutoSize = False
+        lblname.BackColor = Color.Transparent
+        lblname.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
+        lblname.ForeColor = Color.RoyalBlue
+        lblname.Location = New Point(12, 36)
+        lblname.Name = "lblname"
+        lblname.Size = New Size(199, 57)
+        lblname.TabIndex = 3
+        lblname.Text = "The Retail Spot"
+        ' 
+        ' pnldashboard1
+        ' 
+        pnldashboard1.Animated = True
+        pnldashboard1.BackColor = Color.MidnightBlue
+        pnldashboard1.BorderRadius = 10
+        pnldashboard1.CustomizableEdges = CustomizableEdges7
+        pnldashboard1.DisabledState.BorderColor = Color.DarkGray
+        pnldashboard1.DisabledState.CustomBorderColor = Color.DarkGray
+        pnldashboard1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
+        pnldashboard1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
+        pnldashboard1.FillColor = Color.Transparent
+        pnldashboard1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        pnldashboard1.ForeColor = Color.White
+        pnldashboard1.Image = My.Resources.Resources.icons8_dashboard_weigth_48
+        pnldashboard1.ImageAlign = HorizontalAlignment.Left
+        pnldashboard1.Location = New Point(3, 105)
+        pnldashboard1.Name = "pnldashboard1"
+        pnldashboard1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
+        pnldashboard1.Size = New Size(241, 53)
+        pnldashboard1.TabIndex = 2
+        pnldashboard1.Text = "Dashboard"
+        ' 
         ' pnlActivitys
         ' 
+        pnlActivitys.Animated = True
         pnlActivitys.BorderRadius = 10
         pnlActivitys.CustomizableEdges = CustomizableEdges9
         pnlActivitys.DisabledState.BorderColor = Color.DarkGray
@@ -180,19 +204,20 @@ Partial Class Home_Page
         pnlActivitys.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pnlActivitys.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pnlActivitys.FillColor = Color.Transparent
-        pnlActivitys.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        pnlActivitys.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         pnlActivitys.ForeColor = Color.White
-        pnlActivitys.Image = CType(resources.GetObject("pnlActivitys.Image"), Image)
+        pnlActivitys.Image = My.Resources.Resources.icons8_new_job_weigth_48
         pnlActivitys.ImageAlign = HorizontalAlignment.Left
         pnlActivitys.Location = New Point(3, 164)
         pnlActivitys.Name = "pnlActivitys"
         pnlActivitys.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        pnlActivitys.Size = New Size(227, 53)
+        pnlActivitys.Size = New Size(241, 53)
         pnlActivitys.TabIndex = 6
         pnlActivitys.Text = "Activitys"
         ' 
         ' pnlAnalysis
         ' 
+        pnlAnalysis.Animated = True
         pnlAnalysis.BorderRadius = 10
         pnlAnalysis.CustomizableEdges = CustomizableEdges11
         pnlAnalysis.DisabledState.BorderColor = Color.DarkGray
@@ -200,19 +225,20 @@ Partial Class Home_Page
         pnlAnalysis.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pnlAnalysis.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pnlAnalysis.FillColor = Color.Transparent
-        pnlAnalysis.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        pnlAnalysis.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         pnlAnalysis.ForeColor = Color.White
-        pnlAnalysis.Image = CType(resources.GetObject("pnlAnalysis.Image"), Image)
+        pnlAnalysis.Image = My.Resources.Resources.icons8_analysis_weigth_48
         pnlAnalysis.ImageAlign = HorizontalAlignment.Left
         pnlAnalysis.Location = New Point(3, 223)
         pnlAnalysis.Name = "pnlAnalysis"
         pnlAnalysis.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        pnlAnalysis.Size = New Size(227, 53)
+        pnlAnalysis.Size = New Size(241, 53)
         pnlAnalysis.TabIndex = 3
         pnlAnalysis.Text = "Analysis"
         ' 
         ' pnlProduct
         ' 
+        pnlProduct.Animated = True
         pnlProduct.BorderRadius = 10
         pnlProduct.CustomizableEdges = CustomizableEdges13
         pnlProduct.DisabledState.BorderColor = Color.DarkGray
@@ -220,19 +246,20 @@ Partial Class Home_Page
         pnlProduct.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pnlProduct.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pnlProduct.FillColor = Color.Transparent
-        pnlProduct.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        pnlProduct.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         pnlProduct.ForeColor = Color.White
-        pnlProduct.Image = CType(resources.GetObject("pnlProduct.Image"), Image)
+        pnlProduct.Image = My.Resources.Resources.icons8_product_weigth_48
         pnlProduct.ImageAlign = HorizontalAlignment.Left
         pnlProduct.Location = New Point(3, 282)
         pnlProduct.Name = "pnlProduct"
         pnlProduct.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        pnlProduct.Size = New Size(227, 53)
+        pnlProduct.Size = New Size(241, 53)
         pnlProduct.TabIndex = 4
         pnlProduct.Text = "Product"
         ' 
         ' pnlStaff
         ' 
+        pnlStaff.Animated = True
         pnlStaff.BorderRadius = 10
         pnlStaff.CustomizableEdges = CustomizableEdges15
         pnlStaff.DisabledState.BorderColor = Color.DarkGray
@@ -240,19 +267,20 @@ Partial Class Home_Page
         pnlStaff.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pnlStaff.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pnlStaff.FillColor = Color.Transparent
-        pnlStaff.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        pnlStaff.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         pnlStaff.ForeColor = Color.White
-        pnlStaff.Image = CType(resources.GetObject("pnlStaff.Image"), Image)
+        pnlStaff.Image = My.Resources.Resources.icons8_staff_weigth_48
         pnlStaff.ImageAlign = HorizontalAlignment.Left
         pnlStaff.Location = New Point(3, 341)
         pnlStaff.Name = "pnlStaff"
         pnlStaff.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        pnlStaff.Size = New Size(227, 53)
+        pnlStaff.Size = New Size(241, 53)
         pnlStaff.TabIndex = 5
         pnlStaff.Text = "Staff"
         ' 
         ' pnlBranch
         ' 
+        pnlBranch.Animated = True
         pnlBranch.BorderRadius = 10
         pnlBranch.CustomizableEdges = CustomizableEdges17
         pnlBranch.DisabledState.BorderColor = Color.DarkGray
@@ -260,19 +288,20 @@ Partial Class Home_Page
         pnlBranch.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pnlBranch.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pnlBranch.FillColor = Color.Transparent
-        pnlBranch.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        pnlBranch.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         pnlBranch.ForeColor = Color.White
-        pnlBranch.Image = CType(resources.GetObject("pnlBranch.Image"), Image)
+        pnlBranch.Image = My.Resources.Resources.icons8_branch_weigth_48
         pnlBranch.ImageAlign = HorizontalAlignment.Left
         pnlBranch.Location = New Point(3, 400)
         pnlBranch.Name = "pnlBranch"
         pnlBranch.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        pnlBranch.Size = New Size(227, 53)
+        pnlBranch.Size = New Size(241, 53)
         pnlBranch.TabIndex = 6
         pnlBranch.Text = "Branch"
         ' 
         ' pnlProfile
         ' 
+        pnlProfile.Animated = True
         pnlProfile.BorderRadius = 10
         pnlProfile.CustomizableEdges = CustomizableEdges19
         pnlProfile.DisabledState.BorderColor = Color.DarkGray
@@ -280,19 +309,20 @@ Partial Class Home_Page
         pnlProfile.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pnlProfile.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pnlProfile.FillColor = Color.Transparent
-        pnlProfile.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        pnlProfile.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         pnlProfile.ForeColor = Color.White
-        pnlProfile.Image = CType(resources.GetObject("pnlProfile.Image"), Image)
+        pnlProfile.Image = My.Resources.Resources.icons8_user_weigth_48
         pnlProfile.ImageAlign = HorizontalAlignment.Left
         pnlProfile.Location = New Point(3, 459)
         pnlProfile.Name = "pnlProfile"
         pnlProfile.ShadowDecoration.CustomizableEdges = CustomizableEdges20
-        pnlProfile.Size = New Size(227, 53)
+        pnlProfile.Size = New Size(241, 53)
         pnlProfile.TabIndex = 7
         pnlProfile.Text = "Profile"
         ' 
         ' pnlSupport
         ' 
+        pnlSupport.Animated = True
         pnlSupport.BorderRadius = 10
         pnlSupport.CustomizableEdges = CustomizableEdges21
         pnlSupport.DisabledState.BorderColor = Color.DarkGray
@@ -300,14 +330,14 @@ Partial Class Home_Page
         pnlSupport.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pnlSupport.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pnlSupport.FillColor = Color.Transparent
-        pnlSupport.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        pnlSupport.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         pnlSupport.ForeColor = Color.White
-        pnlSupport.Image = CType(resources.GetObject("pnlSupport.Image"), Image)
+        pnlSupport.Image = My.Resources.Resources.icons8_support_weigth_48
         pnlSupport.ImageAlign = HorizontalAlignment.Left
         pnlSupport.Location = New Point(3, 518)
         pnlSupport.Name = "pnlSupport"
         pnlSupport.ShadowDecoration.CustomizableEdges = CustomizableEdges22
-        pnlSupport.Size = New Size(227, 53)
+        pnlSupport.Size = New Size(241, 53)
         pnlSupport.TabIndex = 8
         pnlSupport.Text = "Support"
         ' 
@@ -321,14 +351,14 @@ Partial Class Home_Page
         pnlLogout.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
         pnlLogout.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
         pnlLogout.FillColor = Color.Transparent
-        pnlLogout.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
+        pnlLogout.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         pnlLogout.ForeColor = Color.IndianRed
         pnlLogout.Image = CType(resources.GetObject("pnlLogout.Image"), Image)
         pnlLogout.ImageAlign = HorizontalAlignment.Left
         pnlLogout.Location = New Point(3, 577)
         pnlLogout.Name = "pnlLogout"
         pnlLogout.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        pnlLogout.Size = New Size(227, 53)
+        pnlLogout.Size = New Size(241, 53)
         pnlLogout.TabIndex = 9
         pnlLogout.Text = "Log uot"
         ' 
@@ -353,33 +383,13 @@ Partial Class Home_Page
         PictureBox1.Location = New Point(0, 0)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(1706, 1058)
-        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.SizeMode = PictureBoxSizeMode.CenterImage
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
-        ' pnldashboard1
-        ' 
-        pnldashboard1.BorderRadius = 10
-        pnldashboard1.CustomizableEdges = CustomizableEdges7
-        pnldashboard1.DisabledState.BorderColor = Color.DarkGray
-        pnldashboard1.DisabledState.CustomBorderColor = Color.DarkGray
-        pnldashboard1.DisabledState.FillColor = Color.FromArgb(CByte(169), CByte(169), CByte(169))
-        pnldashboard1.DisabledState.ForeColor = Color.FromArgb(CByte(141), CByte(141), CByte(141))
-        pnldashboard1.FillColor = Color.Transparent
-        pnldashboard1.Font = New Font("Segoe UI", 10.0F, FontStyle.Bold)
-        pnldashboard1.ForeColor = Color.White
-        pnldashboard1.Image = CType(resources.GetObject("pnldashboard1.Image"), Image)
-        pnldashboard1.ImageAlign = HorizontalAlignment.Left
-        pnldashboard1.Location = New Point(3, 105)
-        pnldashboard1.Name = "pnldashboard1"
-        pnldashboard1.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        pnldashboard1.Size = New Size(227, 53)
-        pnldashboard1.TabIndex = 2
-        pnldashboard1.Text = "Dashboard"
-        ' 
         ' Home_Page
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Lavender
         ClientSize = New Size(1940, 1100)
@@ -388,7 +398,7 @@ Partial Class Home_Page
         Controls.Add(Guna2Panel1)
         FormBorderStyle = FormBorderStyle.None
         IsMdiContainer = True
-        name = "Home_Page"
+        Name = "Home_Page"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Home"
         WindowState = FormWindowState.Maximized
@@ -405,7 +415,6 @@ Partial Class Home_Page
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents btnSidebox As PictureBox
     Friend WithEvents SideBar As FlowLayoutPanel
-    Friend WithEvents lblname As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents pnlActivitys As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents pnlAnalysis As Guna.UI2.WinForms.Guna2Button
@@ -416,9 +425,10 @@ Partial Class Home_Page
     Friend WithEvents pnlSupport As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents pnlLogout As Guna.UI2.WinForms.Guna2Button
     Private WithEvents sidebarTransition As Timer
-    Friend WithEvents Paneldisplay As Panel
     Friend WithEvents lblpagename As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnclosepage As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents pnldashboard1 As Guna.UI2.WinForms.Guna2Button
+    Public WithEvents Paneldisplay As Panel
+    Friend WithEvents lblname As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

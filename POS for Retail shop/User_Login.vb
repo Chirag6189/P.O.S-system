@@ -1,5 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports Microsoft.VisualBasic.ApplicationServices
 
 Public Class User_Login
 
@@ -69,7 +70,11 @@ Public Class User_Login
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-        MessageBox.Show("for 'create account' login on Admin Id", "create account")
+        'MessageBox.Show("for 'create account' login on Admin Id", "create account")
+        Dim mdidorm As New Generate_purchase_order("cmj")
+        mdidorm.Show()
+        mdidorm.WindowState = FormWindowState.Maximized
+        mdidorm.BringToFront()
     End Sub
 
 End Class

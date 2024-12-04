@@ -4,28 +4,58 @@
     <Compile Update="Activitys.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Add Product.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Analysis.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Branch.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="CustomerMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="dashboardvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Dialog2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EmployeeMaster.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Generate purchase order.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Home_Page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MakeBill.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Product.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ProductMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Profile.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Receive Purchase Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Supplier Master.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Support.vb">

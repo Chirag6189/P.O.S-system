@@ -9,6 +9,7 @@
       "POS for Retail shop/1.0.0": {
         "dependencies": {
           "Guna.UI2.WinForms": "2.0.4.6",
+          "Syncfusion.Xamarin.SfChart": "26.1.41",
           "System.Data.SqlClient": "4.8.6"
         },
         "runtime": {
@@ -67,6 +68,38 @@
           }
         }
       },
+      "Syncfusion.Licensing/26.1.41": {
+        "runtime": {
+          "lib/net8.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "26.1.41.0",
+            "fileVersion": "26.1.41.0"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Core/26.1.41": {
+        "dependencies": {
+          "Syncfusion.Licensing": "26.1.41",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
+            "assemblyVersion": "26.1.41.0",
+            "fileVersion": "26.1.41.0"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfChart/26.1.41": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "26.1.41",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfChart.XForms.dll": {
+            "assemblyVersion": "26.1.41.0",
+            "fileVersion": "26.1.41.0"
+          }
+        }
+      },
       "System.CodeDom/7.0.0": {},
       "System.Data.SqlClient/4.8.6": {
         "dependencies": {
@@ -120,7 +153,23 @@
           "System.Security.Principal.Windows": "4.7.0"
         }
       },
-      "System.Security.Principal.Windows/4.7.0": {}
+      "System.Security.Principal.Windows/4.7.0": {},
+      "Xamarin.Forms/5.0.0.2012": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.671"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.671"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.671"
+          }
+        }
+      }
     }
   },
   "libraries": {
@@ -178,6 +227,27 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "Syncfusion.Licensing/26.1.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wVoYRc/BHbIPjEC9wxgdInp9+m4wWLU3bWzhJXfKAep9O/SKtsmGJuoU4+zYjiuoUp7yoJ4vYnCA7wYLcqp8Cg==",
+      "path": "syncfusion.licensing/26.1.41",
+      "hashPath": "syncfusion.licensing.26.1.41.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Core/26.1.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aPJzE3R4XdpWxnTjpzhfTbIKVu2giH+de9u/FuzCWLDuBYLaBkEGV/A36jlMq/969QSzWwtjh6b/OZdP/SNeyQ==",
+      "path": "syncfusion.xamarin.core/26.1.41",
+      "hashPath": "syncfusion.xamarin.core.26.1.41.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfChart/26.1.41": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+o6lJU3c8zkvwsiiWJ75ZuKPnQlJ9LQWondYA4t4E/U7K4FzKcdCSIZLSHrKr/1bP7Cn7eEVAeo1eADi9aFkBQ==",
+      "path": "syncfusion.xamarin.sfchart/26.1.41",
+      "hashPath": "syncfusion.xamarin.sfchart.26.1.41.nupkg.sha512"
+    },
     "System.CodeDom/7.0.0": {
       "type": "package",
       "serviceable": true,
@@ -212,6 +282,13 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "Xamarin.Forms/5.0.0.2012": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rqc6xvWR/sf+Db5+qRCFmuYTWVp04QWRfwPto2/JHbShSy4Ed53Q2jpoFzsoloXkJA6saD236PlaWAhT6vI4gw==",
+      "path": "xamarin.forms/5.0.0.2012",
+      "hashPath": "xamarin.forms.5.0.0.2012.nupkg.sha512"
     }
   }
 }

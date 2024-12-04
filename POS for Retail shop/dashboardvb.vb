@@ -8,7 +8,7 @@ Public Class dashboardvb
 
     Dim con As New SqlConnection("Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=dhiraj_sons;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
     Dim cmd As SqlCommand
-    Dim monthlyGoals As Integer = 20000
+    Dim monthlyGoals As Integer = 0
 
     Public Sub New(ByVal name As String, ByVal per As String, ByVal userId As String)
         InitializeComponent()
@@ -36,10 +36,8 @@ Public Class dashboardvb
                 lblClock.Invoke(Sub() UpdateTimeLabel())
             Else
                 lblClock.Text = DateTime.Now.ToString("hh:mm:ss tt")
-                'lblClock.Text = DateTime.Now.ToString("dd/MM/yyyy")/
             End If
         Catch ex As Exception
-            MessageBox.Show("Erorr : " & ex.Message)
         End Try
     End Sub
 
@@ -55,7 +53,7 @@ Public Class dashboardvb
                 label.Text = "₹ 0.00"
             End If
         Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
+            MessageBox.Show("Error un UpdateMonthlyTotalSales Fuction : " & ex.Message)
         End Try
     End Sub
 
@@ -81,7 +79,7 @@ Public Class dashboardvb
             lblGoalAmoount.Text = "₹ " & monthlyGoals & ".00"
 
         Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
+            MessageBox.Show("Error in UpdateMonthlySalesProgress Fuction : " & ex.Message)
         End Try
     End Sub
 
@@ -89,11 +87,13 @@ Public Class dashboardvb
     Private Sub dashboardvb_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblName.Text = "Hi " & name & ", "
         con.Open()
+        TopSellingItem()
         LoadTodaysBills()
+        ShowLowStock()
         FetchCurrentMonthGoal()
         Dim firstDate As DateTime = New DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)
         Dim lastDate As DateTime = firstDate.AddMonths(1).AddDays(-1)
-
+  
         Label15.Text = firstDate.ToString("dd/MM/yyyy")
         Label16.Text = lastDate.ToString("dd/MM/yyyy")
         Label5.Text = DateTime.Now.ToString("dd/MM/yyyy")
@@ -101,6 +101,20 @@ Public Class dashboardvb
         timerdataload.Interval = 500
         timerdataload.Start()
 
+    End Sub
+
+    Private Sub ShowLowStock()
+        Dim query As String = "SELECT prod_id, prod_name, qty, reorder_level FROM [dbo].[product] WHERE qty <= reorder_level;"
+        Dim cmd As New SqlCommand(query, con)
+
+        Try
+            Dim dt As New DataTable()
+            Dim adapter As New SqlDataAdapter(cmd)
+            adapter.Fill(dt)
+            DataGridView2.DataSource = dt
+        Catch ex As Exception
+            MessageBox.Show("Error in ShowLowStock Fuction : " & ex.Message)
+        End Try
     End Sub
 
     Private Sub loadDashboardData(paymentType As String, label As Label)
@@ -116,12 +130,16 @@ Public Class dashboardvb
                 label.Text = "₹ 0.00"
             End If
         Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
+            MessageBox.Show("Error in loadDashboardData fuction : " & ex.Message)
         End Try
     End Sub
 
     Private Sub LoadTodaysBills()
-        Dim query As String = "SELECT bill_no, user_id, customer_id, total_item, net_amount, payment_type, time FROM [dbo].[bill] WHERE CONVERT(DATE, [date], 103) = CONVERT(DATE, GETDATE(), 103) ORDER BY [date] DESC, [time] DESC;"
+        Dim query As String = "SELECT bill_no, user_id, customer_id, total_item, net_amount, payment_type, time, " &
+                          "DATEADD(SECOND, DATEDIFF(SECOND, '00:00:00', TRY_CONVERT(TIME, [time])), TRY_CONVERT(DATETIME, [date], 103)) AS DateTimeCombined " &
+                          "FROM [dbo].[bill] " &
+                          "WHERE TRY_CONVERT(DATE, [date], 103) = CONVERT(DATE, GETDATE(), 103) " &
+                          "ORDER BY DateTimeCombined DESC;"
         Dim cmd As New SqlCommand(query, con)
 
         Try
@@ -129,11 +147,13 @@ Public Class dashboardvb
             Dim adapter As New SqlDataAdapter(cmd)
             adapter.Fill(dt)
             DataGridView1.DataSource = dt
-            lblTotalBillToday.Text = DataGridView1.Rows.Count - 1.ToString()
+            DataGridView1.Columns("DateTimeCombined").Visible = False
+            lblTotalBillToday.Text = (DataGridView1.Rows.Count - 1).ToString()
         Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
+            MessageBox.Show("Error in LoadTodaysBills Function: " & ex.Message)
         End Try
     End Sub
+
 
     Private Sub LoadTotalSals()
         Dim query As String = "SELECT SUM(CAST(net_amount AS INT)) AS TotalNetAmount FROM [dbo].[bill] WHERE CONVERT(DATE, [date], 103) = CONVERT(DATE, GETDATE(), 103);"
@@ -147,7 +167,38 @@ Public Class dashboardvb
                 lblTotalSalsToday.Text = "₹ 0.00"
             End If
         Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
+            MessageBox.Show("Error in LoadTotalSals Fuction : " & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub TopSellingItem()
+        Dim query As String = "SELECT TOP 10 bi.prod_id, bi.prod_name, SUM(CAST(bi.qty AS INT)) AS total_quantity FROM bill b JOIN bill_items bi ON b.bill_no = bi.bill_no WHERE YEAR(CONVERT(DATE, b.date, 103)) = YEAR(GETDATE()) AND MONTH(CONVERT(DATE, b.date, 103)) = MONTH(GETDATE()) GROUP BY bi.prod_id, bi.prod_name ORDER BY total_quantity DESC;
+"
+        Dim cmd As New SqlCommand(query, con)
+
+        Try
+            Dim dt As New DataTable()
+            Dim adapter As New SqlDataAdapter(cmd)
+            adapter.Fill(dt)
+            DataGridView3.DataSource = dt
+        Catch ex As Exception
+            MessageBox.Show("Error in TopSellingItem Fuction : " & ex.Message)
+        End Try
+    End Sub
+
+    Private Sub LoadTodayProfit()
+        Dim query As String = "SELECT SUM(CAST(total_profit AS INT)) AS TotalProfit FROM [dbo].[bill] WHERE CONVERT(DATE, [date], 103) = CONVERT(DATE, GETDATE(), 103);"
+        Dim cmd As New SqlCommand(query, con)
+
+        Try
+            Dim result As Object = cmd.ExecuteScalar()
+            If result IsNot Nothing AndAlso Not IsDBNull(result) Then
+                lblProfit.Text = "₹ " & result.ToString() & ".00"
+            Else
+                lblProfit.Text = "₹ 0.00"
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Error in LoadTodayProfit Fuction : " & ex.Message)
         End Try
     End Sub
 
@@ -161,12 +212,15 @@ Public Class dashboardvb
 
     Private Sub timerdataload_Tick(sender As Object, e As EventArgs) Handles timerdataload.Tick
         LoadTodaysBills()
+        ShowLowStock()
         loadDashboardData("0", lblTotalCaseToday)
         loadDashboardData("24", cardPaymentToday)
         loadDashboardData("27", lblMobilPaymentToday)
         LoadTotalSals()
         UpdateMonthlyTotalSales(lblMonthTotal)
         UpdateMonthlySalesProgress()
+        LoadTodayProfit()
+        TopSellingItem()
 
     End Sub
 
@@ -193,13 +247,13 @@ Public Class dashboardvb
     End Function
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
-        If IsCurrentMonthGoalSet() Then
-            Dim result As DialogResult = MessageBox.Show("Your goal for this month is already set. Do you want to update it with a new amount?", "Update Monthly Goal", MessageBoxButtons.YesNo)
+        If IsCurrentMonthGoalSet Then
+            Dim result = MessageBox.Show("Your goal for this month is already set. Do you want to update it with a new amount?", "Update Monthly Goal", MessageBoxButtons.YesNo)
             If result = DialogResult.Yes Then
-                UpdateCurrentMonthGoal()
+                UpdateCurrentMonthGoal
             End If
         Else
-            SetNewMonthlyGoal()
+            SetNewMonthlyGoal
         End If
     End Sub
 
@@ -220,7 +274,7 @@ Public Class dashboardvb
                 UpdateMonthlySalesProgress()
                 lblGoalAmoount.Text = "₹ " & monthlyGoals & ".00"
             Catch ex As Exception
-                MessageBox.Show("Error: " & ex.Message)
+                MessageBox.Show("Error in UpdateCurrentMonthGoal Fuction : " & ex.Message)
             End Try
         Else
             MessageBox.Show("Please enter a valid goal amount.")
@@ -248,7 +302,8 @@ Public Class dashboardvb
                 UpdateMonthlySalesProgress()
                 FetchCurrentMonthGoal()
             Catch ex As Exception
-                MessageBox.Show("Error: " & ex.Message)
+                MessageBox.Show("Error in SetNewMonthlyGoal
+Fuction : " & ex.Message)
             End Try
         Else
             MessageBox.Show("Please enter a valid goal amount.")
@@ -285,5 +340,6 @@ Public Class dashboardvb
             MessageBox.Show("Error fetching current month's goal: " & ex.Message)
         End Try
     End Sub
+
 
 End Class

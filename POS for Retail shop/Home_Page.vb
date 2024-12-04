@@ -1,6 +1,7 @@
 ﻿Imports System.Runtime.CompilerServices
 Imports Guna.UI2.WinForms
 Imports Microsoft.SqlServer.Server
+Imports Xamarin.Forms
 
 Public Class Home_Page
     Dim name As String
@@ -65,6 +66,59 @@ Public Class Home_Page
 
     End Sub
 
+    Private Sub UpdateButtonStyles(clickedButton As Guna2Button)
+        Dim buttons As Guna2Button() = {pnldashboard1, pnlActivitys, pnlAnalysis, pnlProduct, pnlStaff, pnlBranch, pnlProfile, pnlSupport}
+
+        For Each btn As Guna2Button In buttons
+            If btn Is clickedButton Then
+                btn.BackColor = Color.Lavender
+                btn.ForeColor = Color.Black
+
+                Select Case btn.Name
+                    Case "pnldashboard1"
+                        btn.Image = My.Resources.icons8_dashboard_black_48
+                    Case "pnlActivitys"
+                        btn.Image = My.Resources.icons8_new_job_black_48
+                    Case "pnlAnalysis"
+                        btn.Image = My.Resources.icons8_analysis_black_48
+                    Case "pnlProduct"
+                        btn.Image = My.Resources.icons8_product_black_48
+                    Case "pnlStaff"
+                        btn.Image = My.Resources.icons8_staff_black_48
+                    Case "pnlBranch"
+                        btn.Image = My.Resources.icons8_branch_black_48
+                    Case "pnlProfile"
+                        btn.Image = My.Resources.icons8_user_black_48
+                    Case "pnlSupport"
+                        btn.Image = My.Resources.icons8_support_black_48
+                End Select
+
+            Else
+                btn.BackColor = Color.Transparent
+                btn.ForeColor = Color.White
+
+                Select Case btn.Name
+                    Case "pnldashboard1"
+                        btn.Image = My.Resources.icons8_dashboard_weigth_48
+                    Case "pnlActivitys"
+                        btn.Image = My.Resources.icons8_new_job_weigth_48
+                    Case "pnlAnalysis"
+                        btn.Image = My.Resources.icons8_analysis_weigth_48
+                    Case "pnlProduct"
+                        btn.Image = My.Resources.icons8_product_weigth_48
+                    Case "pnlStaff"
+                        btn.Image = My.Resources.icons8_staff_weigth_48
+                    Case "pnlBranch"
+                        btn.Image = My.Resources.icons8_branch_weigth_48
+                    Case "pnlProfile"
+                        btn.Image = My.Resources.icons8_user_weigth_48
+                    Case "pnlSupport"
+                        btn.Image = My.Resources.icons8_support_weigth_48
+                End Select
+            End If
+        Next
+    End Sub
+
     Private Sub openChildForm(childForm As Form, btnSender As Object)
         If activeform IsNot Nothing Then
             activeform.Close()
@@ -79,6 +133,8 @@ Public Class Home_Page
         childForm.Show()
         lblpagename.Text = childForm.Text
         btnclosepage.Visible = True
+
+        UpdateButtonStyles(btnSender)
     End Sub
 
     Private Sub btnSidebox_Click(sender As Object, e As EventArgs) Handles btnSidebox.Click
@@ -86,6 +142,9 @@ Public Class Home_Page
     End Sub
 
     Private Sub pnldashboard_Click(sender As Object, e As EventArgs) Handles pnldashboard1.Click
+        pnldashboard1.BackColor = Color.Lavender
+        pnldashboard1.ForeColor = Color.Black
+
         openChildForm(New dashboardvb(name, per, userId), sender)
     End Sub
 
@@ -94,15 +153,15 @@ Public Class Home_Page
     End Sub
 
     Private Sub pnlAnalysis_Click(sender As Object, e As EventArgs) Handles pnlAnalysis.Click
-        openChildForm(New Analysis(), sender)
+        openChildForm(New Analysis(name, per, userId), sender)
     End Sub
 
     Private Sub pnlProduct_Click(sender As Object, e As EventArgs) Handles pnlProduct.Click
-        openChildForm(New Product, sender)
+        openChildForm(New Product(name, per, userId), sender)
     End Sub
 
     Private Sub pnlStaff_Click(sender As Object, e As EventArgs) Handles pnlStaff.Click
-        openChildForm(New Staff(), sender)
+        openChildForm(New Staff(name, per, userId), sender)
     End Sub
 
     Private Sub pnlBranch_Click(sender As Object, e As EventArgs) Handles pnlBranch.Click
@@ -110,7 +169,7 @@ Public Class Home_Page
     End Sub
 
     Private Sub pnlProfile_Click(sender As Object, e As EventArgs) Handles pnlProfile.Click
-        openChildForm(New Profile(), sender)
+        openChildForm(New Profile(name, per, userId), sender)
     End Sub
 
     Private Sub pnlSupport_Click(sender As Object, e As EventArgs) Handles pnlSupport.Click
@@ -132,8 +191,5 @@ Public Class Home_Page
 
     Private Sub Home_Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
     End Sub
 End Class

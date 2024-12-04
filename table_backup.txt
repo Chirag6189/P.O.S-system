@@ -1,0 +1,151 @@
+CREATE TABLE [dbo].[Supplier] (
+    [Supplier_ID]   VARCHAR (20)  NOT NULL,
+    [Supplier_Name] VARCHAR (100) NOT NULL,
+    [Phone]         VARCHAR (20)  NULL,
+    [Email]         VARCHAR (100) NULL,
+    [Address]       VARCHAR (255) NULL,
+    [City]          VARCHAR (100) NULL,
+    [State]         VARCHAR (100) NULL,
+    [Zip_Code]      VARCHAR (20)  NULL,
+    [Country]       VARCHAR (100) NULL,
+    [Notes]         VARCHAR (200) NULL,
+    [Created_At]    VARCHAR (40)  NULL,
+    [Updated_At]    VARCHAR (40)  NULL
+);
+
+
+CREATE TABLE [dbo].[Salary] (
+    [Id]           INT             IDENTITY (1, 1) NOT NULL,
+    [EmployeeId]   NVARCHAR (50)   NULL,
+    [Month]        INT             NULL,
+    [Year]         INT             NULL,
+    [TotalDays]    INT             NULL,
+    [PresentDays]  INT             NULL,
+    [AbsentDays]   INT             NULL,
+    [SalaryAmount] DECIMAL (10, 2) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[product] (
+    [prod_id]       VARCHAR (20) NOT NULL,
+    [prod_name]     VARCHAR (50) NULL,
+    [prod_mrp]      INT          NULL,
+    [disc]          INT          NULL,
+    [sale_rate]     INT          NULL,
+    [total_cost]    INT          NULL,
+    [qty]           INT          NULL,
+    [reorder_level] INT          NULL,
+    [Barcode]       VARCHAR (20) NULL,
+    [sold_qty]      INT          NULL,
+    PRIMARY KEY CLUSTERED ([prod_id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Payment_type] (
+    [type] NVARCHAR (50) NOT NULL,
+    [name] NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([type] ASC)
+);
+
+
+CREATE TABLE [dbo].[Number] (
+    [fild_name] VARCHAR (20) NULL,
+    [no]        INT          NULL
+);
+
+
+CREATE TABLE [dbo].[monthly_goals] (
+    [date]        DATE          NOT NULL,
+    [goal_amount] INT           NOT NULL,
+    [status]      NVARCHAR (50) NULL,
+    [user]        NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([date] ASC)
+);
+
+
+CREATE TABLE [dbo].[employee] (
+    [emp_id]           VARCHAR (10) NULL,
+    [emp_name]         VARCHAR (20) NULL,
+    [user_id]          VARCHAR (10) NULL,
+    [pass]             VARCHAR (10) NULL,
+    [permition]        VARCHAR (10) NULL,
+    [Salary]           VARCHAR (10) NULL,
+    [Date_of_birth]    VARCHAR (10) NULL,
+    [Gender]           VARCHAR (10) NULL,
+    [email]            VARCHAR (50) NULL,
+    [address]          VARCHAR (50) NULL,
+    [phone]            VARCHAR (10) NULL,
+    [position]         VARCHAR (50) NULL,
+    [hire_date]        VARCHAR (10) NULL,
+    [EmploymentStatus] VARCHAR (20) NULL
+);
+
+
+CREATE TABLE [dbo].[Customers] (
+    [CustomerID] NVARCHAR (20)  NOT NULL,
+    [Name]       NVARCHAR (100) NOT NULL,
+    [Dis]        NVARCHAR (10)  NULL,
+    [Email]      NVARCHAR (100) NULL,
+    [Phone]      NVARCHAR (20)  NULL,
+    [Address]    NVARCHAR (255) NULL,
+    [City]       NVARCHAR (100) NULL,
+    [State]      NVARCHAR (100) NULL,
+    [Country]    NVARCHAR (100) NULL,
+    [PostalCode] NVARCHAR (20)  NULL,
+    [CreatedAt]  NVARCHAR (20)  NULL,
+    PRIMARY KEY CLUSTERED ([CustomerID] ASC)
+);
+
+
+CREATE TABLE [dbo].[bill_items] (
+    [bill_no]    INT            NOT NULL,
+    [prod_id]    NVARCHAR (50)  NOT NULL,
+    [prod_name]  NVARCHAR (255) NULL,
+    [mrp]        NVARCHAR (50)  NULL,
+    [sale_rate]  NVARCHAR (50)  NOT NULL,
+    [dis]        NVARCHAR (50)  NULL,
+    [qty]        NVARCHAR (50)  NULL,
+    [total_rate] NVARCHAR (50)  NULL
+);
+
+
+CREATE TABLE [dbo].[bill] (
+    [bill_no]         INT           NOT NULL,
+    [user_id]         NVARCHAR (50) NULL,
+    [customer_id]     NVARCHAR (50) NULL,
+    [total_mrp]       NVARCHAR (50) NULL,
+    [total_dis]       NVARCHAR (50) NULL,
+    [extra_dis]       NVARCHAR (50) NULL,
+    [net_amount]      NVARCHAR (50) NULL,
+    [total_profit]    NVARCHAR (50) NULL,
+    [total_item]      NVARCHAR (50) NULL,
+    [total_qty]       NVARCHAR (50) NULL,
+    [payment_type]    NVARCHAR (50) NULL,
+    [payment_details] NVARCHAR (50) NULL,
+    [narration]       NVARCHAR (50) NULL,
+    [date]            NVARCHAR (50) NULL,
+    [time]            NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([bill_no] ASC)
+);
+
+
+CREATE TABLE [dbo].[Attendance] (
+    [Id]         INT           IDENTITY (1, 1) NOT NULL,
+    [EmployeeId] NVARCHAR (50) NULL,
+    [Date]       DATE          NOT NULL,
+    [InTime]     DATETIME      NULL,
+    [OutTime]    DATETIME      NULL,
+    [Status]     NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[ALL_Product] (
+    [prod_id]       VARCHAR (20) NOT NULL,
+    [prod_name]     VARCHAR (50) NOT NULL,
+    [barcode]       VARCHAR (50) NOT NULL,
+    [reorder_level] VARCHAR (20) NULL,
+    [Supplier_ID]   VARCHAR (10) NULL
+);
+
