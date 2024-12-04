@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jadha\\source\\Repos\\POS for Retail shop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE0AE811-CF82-48F1-B047-C7E417B7A064}|POS for Retail shop\\POS for Retail shop.vbproj|c:\\users\\jadha\\source\\repos\\pos for retail shop\\pos for retail shop\\generate purchase order.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{EE0AE811-CF82-48F1-B047-C7E417B7A064}|POS for Retail shop\\POS for Retail shop.vbproj|solutionrelative:pos for retail shop\\generate purchase order.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE0AE811-CF82-48F1-B047-C7E417B7A064}|POS for Retail shop\\POS for Retail shop.vbproj|c:\\users\\jadha\\source\\repos\\pos for retail shop\\pos for retail shop\\receive purchase order.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{EE0AE811-CF82-48F1-B047-C7E417B7A064}|POS for Retail shop\\POS for Retail shop.vbproj|solutionrelative:pos for retail shop\\receive purchase order.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Generate purchase order.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\jadha\\source\\Repos\\POS for Retail shop\\POS for Retail shop\\Generate purchase order.vb",
+              "RelativeDocumentMoniker": "POS for Retail shop\\Generate purchase order.vb",
+              "ToolTip": "C:\\Users\\jadha\\source\\Repos\\POS for Retail shop\\POS for Retail shop\\Generate purchase order.vb [Design]",
+              "RelativeToolTip": "POS for Retail shop\\Generate purchase order.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T18:41:09.164Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Receive Purchase Order.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\jadha\\source\\Repos\\POS for Retail shop\\POS for Retail shop\\Receive Purchase Order.vb",
+              "RelativeDocumentMoniker": "POS for Retail shop\\Receive Purchase Order.vb",
+              "ToolTip": "C:\\Users\\jadha\\source\\Repos\\POS for Retail shop\\POS for Retail shop\\Receive Purchase Order.vb [Design]",
+              "RelativeToolTip": "POS for Retail shop\\Receive Purchase Order.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-04T18:41:07.784Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
