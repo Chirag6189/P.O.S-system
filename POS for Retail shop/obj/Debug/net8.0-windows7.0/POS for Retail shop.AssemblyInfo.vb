@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("POS for Retail shop"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d90fceab54bdbd72d2d53f24d46b874ac0c10d2"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf281e969a8f1f083baefa2915fed8536f5098f1"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("POS for Retail shop"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("POS for Retail shop"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

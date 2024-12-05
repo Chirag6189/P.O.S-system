@@ -30,11 +30,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.purchase_order.sql",
+              "Title": "dbo.purchase_order [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/dhiraj_sons/True/SqlTable/dbo.purchase_order.sql",
-              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/dhiraj_sons/True/SqlTable/dbo.purchase_order.sql",
+              "ToolTip": "dbo.purchase_order [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-12-05T18:06:13.376Z"
+              "WhenOpened": "2024-12-05T18:06:13.376Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
