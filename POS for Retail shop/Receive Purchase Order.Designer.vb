@@ -22,46 +22,64 @@ Partial Class Receive_Purchase_Order
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim CustomizableEdges19 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges20 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges21 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges22 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges23 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges24 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges25 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges26 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges27 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges28 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges29 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges30 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges31 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges32 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges17 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges18 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges15 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges16 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges13 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges14 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges11 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges12 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges9 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges10 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges7 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges8 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges5 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges6 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges3 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges4 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges1 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim CustomizableEdges2 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim CustomizableEdges33 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges34 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges35 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges36 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges37 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges38 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges39 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges40 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges41 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges42 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges43 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges44 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges45 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges46 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges47 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges48 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges49 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges50 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges51 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges52 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges53 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges54 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges55 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges56 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges57 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges58 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges59 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges60 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges61 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges62 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges63 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim CustomizableEdges64 As Guna.UI2.WinForms.Suite.CustomizableEdges = New Guna.UI2.WinForms.Suite.CustomizableEdges()
+        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Guna2ShadowPanel9 = New Guna.UI2.WinForms.Guna2ShadowPanel()
         Label1 = New Label()
         Guna2ShadowPanel1 = New Guna.UI2.WinForms.Guna2ShadowPanel()
+        Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
+        Label15 = New Label()
+        Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
+        Label14 = New Label()
+        txtQty = New Guna.UI2.WinForms.Guna2TextBox()
+        Label13 = New Label()
+        txtTotalCost = New Guna.UI2.WinForms.Guna2TextBox()
+        Label12 = New Label()
+        txtSaleRate = New Guna.UI2.WinForms.Guna2TextBox()
+        Label11 = New Label()
+        txtProductDis = New Guna.UI2.WinForms.Guna2TextBox()
+        Label10 = New Label()
+        txtProductMRP = New Guna.UI2.WinForms.Guna2TextBox()
+        Label9 = New Label()
+        txtProductName = New Guna.UI2.WinForms.Guna2TextBox()
+        Label8 = New Label()
+        txtProductCode = New Guna.UI2.WinForms.Guna2TextBox()
+        Label7 = New Label()
         Label6 = New Label()
         Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
         Label5 = New Label()
@@ -73,25 +91,7 @@ Partial Class Receive_Purchase_Order
         txtSupplierName = New Guna.UI2.WinForms.Guna2TextBox()
         Label3 = New Label()
         txtSupplierId = New Guna.UI2.WinForms.Guna2TextBox()
-        cmbSupplier = New Guna.UI2.WinForms.Guna2ComboBox()
-        txtProductCode = New Guna.UI2.WinForms.Guna2TextBox()
-        Label7 = New Label()
-        txtProductName = New Guna.UI2.WinForms.Guna2TextBox()
-        Label8 = New Label()
-        txtProductMRP = New Guna.UI2.WinForms.Guna2TextBox()
-        Label9 = New Label()
-        txtProductDis = New Guna.UI2.WinForms.Guna2TextBox()
-        Label10 = New Label()
-        txtSaleRate = New Guna.UI2.WinForms.Guna2TextBox()
-        Label11 = New Label()
-        txtTotalCost = New Guna.UI2.WinForms.Guna2TextBox()
-        Label12 = New Label()
-        txtQty = New Guna.UI2.WinForms.Guna2TextBox()
-        Label13 = New Label()
-        Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
-        Label14 = New Label()
-        Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
-        Label15 = New Label()
+        cmbPO = New Guna.UI2.WinForms.Guna2ComboBox()
         Item_List = New Guna.UI2.WinForms.Guna2DataGridView()
         Column6 = New DataGridViewTextBoxColumn()
         Column1 = New DataGridViewTextBoxColumn()
@@ -165,7 +165,7 @@ Partial Class Receive_Purchase_Order
         Guna2ShadowPanel1.Controls.Add(txtSupplierName)
         Guna2ShadowPanel1.Controls.Add(Label3)
         Guna2ShadowPanel1.Controls.Add(txtSupplierId)
-        Guna2ShadowPanel1.Controls.Add(cmbSupplier)
+        Guna2ShadowPanel1.Controls.Add(cmbPO)
         Guna2ShadowPanel1.FillColor = Color.White
         Guna2ShadowPanel1.Location = New Point(24, 112)
         Guna2ShadowPanel1.Margin = New Padding(15)
@@ -176,6 +176,367 @@ Partial Class Receive_Purchase_Order
         Guna2ShadowPanel1.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal
         Guna2ShadowPanel1.Size = New Size(1876, 219)
         Guna2ShadowPanel1.TabIndex = 31
+        ' 
+        ' Guna2TextBox6
+        ' 
+        Guna2TextBox6.Animated = True
+        Guna2TextBox6.BackColor = Color.Transparent
+        Guna2TextBox6.BorderColor = Color.Black
+        Guna2TextBox6.BorderRadius = 5
+        Guna2TextBox6.CustomizableEdges = CustomizableEdges33
+        Guna2TextBox6.DefaultText = ""
+        Guna2TextBox6.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        Guna2TextBox6.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        Guna2TextBox6.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox6.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox6.FillColor = Color.AliceBlue
+        Guna2TextBox6.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox6.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        Guna2TextBox6.ForeColor = Color.Black
+        Guna2TextBox6.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox6.Location = New Point(1516, 157)
+        Guna2TextBox6.Margin = New Padding(0)
+        Guna2TextBox6.Name = "Guna2TextBox6"
+        Guna2TextBox6.PasswordChar = ChrW(0)
+        Guna2TextBox6.PlaceholderText = "Exp. Date"
+        Guna2TextBox6.SelectedText = ""
+        Guna2TextBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges34
+        Guna2TextBox6.Size = New Size(167, 40)
+        Guna2TextBox6.TabIndex = 91
+        Guna2TextBox6.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label15
+        ' 
+        Label15.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label15.AutoSize = True
+        Label15.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label15.ForeColor = Color.Black
+        Label15.Location = New Point(1552, 127)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(98, 23)
+        Label15.TabIndex = 90
+        Label15.Text = "Exp. Date"
+        ' 
+        ' Guna2TextBox5
+        ' 
+        Guna2TextBox5.Animated = True
+        Guna2TextBox5.BackColor = Color.Transparent
+        Guna2TextBox5.BorderColor = Color.Black
+        Guna2TextBox5.BorderRadius = 5
+        Guna2TextBox5.CustomizableEdges = CustomizableEdges35
+        Guna2TextBox5.DefaultText = ""
+        Guna2TextBox5.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        Guna2TextBox5.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        Guna2TextBox5.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox5.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        Guna2TextBox5.FillColor = Color.AliceBlue
+        Guna2TextBox5.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox5.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        Guna2TextBox5.ForeColor = Color.Black
+        Guna2TextBox5.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        Guna2TextBox5.Location = New Point(1347, 157)
+        Guna2TextBox5.Margin = New Padding(0)
+        Guna2TextBox5.Name = "Guna2TextBox5"
+        Guna2TextBox5.PasswordChar = ChrW(0)
+        Guna2TextBox5.PlaceholderText = "Mfg. Date"
+        Guna2TextBox5.SelectedText = ""
+        Guna2TextBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges36
+        Guna2TextBox5.Size = New Size(167, 40)
+        Guna2TextBox5.TabIndex = 89
+        Guna2TextBox5.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label14
+        ' 
+        Label14.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label14.AutoSize = True
+        Label14.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label14.ForeColor = Color.Black
+        Label14.Location = New Point(1382, 127)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(99, 23)
+        Label14.TabIndex = 88
+        Label14.Text = "Mfg. Date"
+        ' 
+        ' txtQty
+        ' 
+        txtQty.Animated = True
+        txtQty.BackColor = Color.Transparent
+        txtQty.BorderColor = Color.Black
+        txtQty.BorderRadius = 5
+        txtQty.CustomizableEdges = CustomizableEdges37
+        txtQty.DefaultText = ""
+        txtQty.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtQty.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtQty.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtQty.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtQty.FillColor = Color.AliceBlue
+        txtQty.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtQty.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        txtQty.ForeColor = Color.Black
+        txtQty.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtQty.Location = New Point(1177, 157)
+        txtQty.Margin = New Padding(0)
+        txtQty.Name = "txtQty"
+        txtQty.PasswordChar = ChrW(0)
+        txtQty.PlaceholderText = "Qty"
+        txtQty.SelectedText = ""
+        txtQty.ShadowDecoration.CustomizableEdges = CustomizableEdges38
+        txtQty.Size = New Size(167, 40)
+        txtQty.TabIndex = 87
+        txtQty.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label13
+        ' 
+        Label13.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label13.AutoSize = True
+        Label13.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label13.ForeColor = Color.Black
+        Label13.Location = New Point(1238, 127)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(43, 23)
+        Label13.TabIndex = 86
+        Label13.Text = "Qty"
+        ' 
+        ' txtTotalCost
+        ' 
+        txtTotalCost.Animated = True
+        txtTotalCost.BackColor = Color.Transparent
+        txtTotalCost.BorderColor = Color.Black
+        txtTotalCost.BorderRadius = 5
+        txtTotalCost.CustomizableEdges = CustomizableEdges39
+        txtTotalCost.DefaultText = ""
+        txtTotalCost.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtTotalCost.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtTotalCost.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtTotalCost.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtTotalCost.FillColor = Color.AliceBlue
+        txtTotalCost.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtTotalCost.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        txtTotalCost.ForeColor = Color.Black
+        txtTotalCost.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtTotalCost.Location = New Point(1007, 157)
+        txtTotalCost.Margin = New Padding(0)
+        txtTotalCost.Name = "txtTotalCost"
+        txtTotalCost.PasswordChar = ChrW(0)
+        txtTotalCost.PlaceholderText = "Total Cost"
+        txtTotalCost.SelectedText = ""
+        txtTotalCost.ShadowDecoration.CustomizableEdges = CustomizableEdges40
+        txtTotalCost.Size = New Size(167, 40)
+        txtTotalCost.TabIndex = 85
+        txtTotalCost.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label12
+        ' 
+        Label12.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label12.AutoSize = True
+        Label12.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label12.ForeColor = Color.Black
+        Label12.Location = New Point(1042, 127)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(100, 23)
+        Label12.TabIndex = 84
+        Label12.Text = "Total Cost"
+        ' 
+        ' txtSaleRate
+        ' 
+        txtSaleRate.Animated = True
+        txtSaleRate.BackColor = Color.Transparent
+        txtSaleRate.BorderColor = Color.Black
+        txtSaleRate.BorderRadius = 5
+        txtSaleRate.CustomizableEdges = CustomizableEdges41
+        txtSaleRate.DefaultText = ""
+        txtSaleRate.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtSaleRate.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtSaleRate.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtSaleRate.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtSaleRate.FillColor = Color.AliceBlue
+        txtSaleRate.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtSaleRate.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        txtSaleRate.ForeColor = Color.Black
+        txtSaleRate.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtSaleRate.Location = New Point(837, 157)
+        txtSaleRate.Margin = New Padding(0)
+        txtSaleRate.Name = "txtSaleRate"
+        txtSaleRate.PasswordChar = ChrW(0)
+        txtSaleRate.PlaceholderText = "Sale Rate"
+        txtSaleRate.SelectedText = ""
+        txtSaleRate.ShadowDecoration.CustomizableEdges = CustomizableEdges42
+        txtSaleRate.Size = New Size(167, 40)
+        txtSaleRate.TabIndex = 83
+        txtSaleRate.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label11
+        ' 
+        Label11.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label11.AutoSize = True
+        Label11.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label11.ForeColor = Color.Black
+        Label11.Location = New Point(873, 127)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(97, 23)
+        Label11.TabIndex = 82
+        Label11.Text = "Sale Rate"
+        ' 
+        ' txtProductDis
+        ' 
+        txtProductDis.Animated = True
+        txtProductDis.BackColor = Color.Transparent
+        txtProductDis.BorderColor = Color.Black
+        txtProductDis.BorderRadius = 5
+        txtProductDis.CustomizableEdges = CustomizableEdges43
+        txtProductDis.DefaultText = ""
+        txtProductDis.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtProductDis.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtProductDis.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtProductDis.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtProductDis.FillColor = Color.AliceBlue
+        txtProductDis.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtProductDis.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        txtProductDis.ForeColor = Color.Black
+        txtProductDis.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtProductDis.Location = New Point(667, 157)
+        txtProductDis.Margin = New Padding(0)
+        txtProductDis.Name = "txtProductDis"
+        txtProductDis.PasswordChar = ChrW(0)
+        txtProductDis.PlaceholderText = "Dis"
+        txtProductDis.SelectedText = ""
+        txtProductDis.ShadowDecoration.CustomizableEdges = CustomizableEdges44
+        txtProductDis.Size = New Size(167, 40)
+        txtProductDis.TabIndex = 81
+        txtProductDis.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label10
+        ' 
+        Label10.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label10.AutoSize = True
+        Label10.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label10.ForeColor = Color.Black
+        Label10.Location = New Point(694, 127)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(112, 23)
+        Label10.TabIndex = 80
+        Label10.Text = "Product Dis"
+        ' 
+        ' txtProductMRP
+        ' 
+        txtProductMRP.Animated = True
+        txtProductMRP.BackColor = Color.Transparent
+        txtProductMRP.BorderColor = Color.Black
+        txtProductMRP.BorderRadius = 5
+        txtProductMRP.CustomizableEdges = CustomizableEdges45
+        txtProductMRP.DefaultText = ""
+        txtProductMRP.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtProductMRP.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtProductMRP.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtProductMRP.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtProductMRP.FillColor = Color.AliceBlue
+        txtProductMRP.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtProductMRP.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        txtProductMRP.ForeColor = Color.Black
+        txtProductMRP.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtProductMRP.Location = New Point(497, 157)
+        txtProductMRP.Margin = New Padding(0)
+        txtProductMRP.Name = "txtProductMRP"
+        txtProductMRP.PasswordChar = ChrW(0)
+        txtProductMRP.PlaceholderText = "MRP"
+        txtProductMRP.SelectedText = ""
+        txtProductMRP.ShadowDecoration.CustomizableEdges = CustomizableEdges46
+        txtProductMRP.Size = New Size(167, 40)
+        txtProductMRP.TabIndex = 79
+        txtProductMRP.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label9
+        ' 
+        Label9.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label9.AutoSize = True
+        Label9.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label9.ForeColor = Color.Black
+        Label9.Location = New Point(518, 127)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(125, 23)
+        Label9.TabIndex = 78
+        Label9.Text = "Product MRP"
+        ' 
+        ' txtProductName
+        ' 
+        txtProductName.Animated = True
+        txtProductName.BackColor = Color.Transparent
+        txtProductName.BorderColor = Color.Black
+        txtProductName.BorderRadius = 5
+        txtProductName.CustomizableEdges = CustomizableEdges47
+        txtProductName.DefaultText = ""
+        txtProductName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtProductName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtProductName.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtProductName.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtProductName.FillColor = Color.AliceBlue
+        txtProductName.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtProductName.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        txtProductName.ForeColor = Color.Black
+        txtProductName.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtProductName.Location = New Point(186, 157)
+        txtProductName.Margin = New Padding(0)
+        txtProductName.Name = "txtProductName"
+        txtProductName.PasswordChar = ChrW(0)
+        txtProductName.PlaceholderText = "Name"
+        txtProductName.ReadOnly = True
+        txtProductName.SelectedText = ""
+        txtProductName.ShadowDecoration.CustomizableEdges = CustomizableEdges48
+        txtProductName.Size = New Size(308, 40)
+        txtProductName.TabIndex = 77
+        txtProductName.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label8
+        ' 
+        Label8.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label8.AutoSize = True
+        Label8.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label8.ForeColor = Color.Black
+        Label8.Location = New Point(274, 127)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(143, 23)
+        Label8.TabIndex = 76
+        Label8.Text = "Product Name"
+        ' 
+        ' txtProductCode
+        ' 
+        txtProductCode.Animated = True
+        txtProductCode.BackColor = Color.Transparent
+        txtProductCode.BorderColor = Color.Black
+        txtProductCode.BorderRadius = 5
+        txtProductCode.CustomizableEdges = CustomizableEdges49
+        txtProductCode.DefaultText = ""
+        txtProductCode.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
+        txtProductCode.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
+        txtProductCode.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtProductCode.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
+        txtProductCode.FillColor = Color.AliceBlue
+        txtProductCode.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtProductCode.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        txtProductCode.ForeColor = Color.Black
+        txtProductCode.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        txtProductCode.Location = New Point(16, 157)
+        txtProductCode.Margin = New Padding(0)
+        txtProductCode.Name = "txtProductCode"
+        txtProductCode.PasswordChar = ChrW(0)
+        txtProductCode.PlaceholderText = "Code"
+        txtProductCode.SelectedText = ""
+        txtProductCode.ShadowDecoration.CustomizableEdges = CustomizableEdges50
+        txtProductCode.Size = New Size(167, 40)
+        txtProductCode.TabIndex = 75
+        txtProductCode.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' Label7
+        ' 
+        Label7.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Label7.AutoSize = True
+        Label7.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
+        Label7.ForeColor = Color.Black
+        Label7.Location = New Point(31, 127)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(138, 23)
+        Label7.TabIndex = 74
+        Label7.Text = "Product Code"
         ' 
         ' Label6
         ' 
@@ -195,7 +556,7 @@ Partial Class Receive_Purchase_Order
         Guna2TextBox4.BackColor = Color.Transparent
         Guna2TextBox4.BorderColor = Color.Black
         Guna2TextBox4.BorderRadius = 5
-        Guna2TextBox4.CustomizableEdges = CustomizableEdges19
+        Guna2TextBox4.CustomizableEdges = CustomizableEdges51
         Guna2TextBox4.DefaultText = ""
         Guna2TextBox4.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox4.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -213,7 +574,7 @@ Partial Class Receive_Purchase_Order
         Guna2TextBox4.PlaceholderText = "user id"
         Guna2TextBox4.ReadOnly = True
         Guna2TextBox4.SelectedText = ""
-        Guna2TextBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges20
+        Guna2TextBox4.ShadowDecoration.CustomizableEdges = CustomizableEdges52
         Guna2TextBox4.Size = New Size(149, 40)
         Guna2TextBox4.TabIndex = 72
         Guna2TextBox4.TextAlign = HorizontalAlignment.Center
@@ -236,7 +597,7 @@ Partial Class Receive_Purchase_Order
         Guna2TextBox3.BackColor = Color.Transparent
         Guna2TextBox3.BorderColor = Color.Black
         Guna2TextBox3.BorderRadius = 5
-        Guna2TextBox3.CustomizableEdges = CustomizableEdges21
+        Guna2TextBox3.CustomizableEdges = CustomizableEdges53
         Guna2TextBox3.DefaultText = ""
         Guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox3.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -254,7 +615,7 @@ Partial Class Receive_Purchase_Order
         Guna2TextBox3.PlaceholderText = "user id"
         Guna2TextBox3.ReadOnly = True
         Guna2TextBox3.SelectedText = ""
-        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges22
+        Guna2TextBox3.ShadowDecoration.CustomizableEdges = CustomizableEdges54
         Guna2TextBox3.Size = New Size(149, 40)
         Guna2TextBox3.TabIndex = 70
         Guna2TextBox3.TextAlign = HorizontalAlignment.Center
@@ -266,7 +627,7 @@ Partial Class Receive_Purchase_Order
         Guna2TextBox2.BorderColor = Color.Gray
         Guna2TextBox2.BorderRadius = 7
         Guna2TextBox2.BorderThickness = 2
-        Guna2TextBox2.CustomizableEdges = CustomizableEdges23
+        Guna2TextBox2.CustomizableEdges = CustomizableEdges55
         Guna2TextBox2.DefaultText = "P.O Status"
         Guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox2.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -274,18 +635,18 @@ Partial Class Receive_Purchase_Order
         Guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
         Guna2TextBox2.FillColor = Color.MidnightBlue
         Guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox2.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
+        Guna2TextBox2.Font = New Font("Century Gothic", 16F, FontStyle.Bold)
         Guna2TextBox2.ForeColor = Color.Lavender
         Guna2TextBox2.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox2.Location = New Point(1652, 17)
+        Guna2TextBox2.Location = New Point(1605, 17)
         Guna2TextBox2.Margin = New Padding(0)
         Guna2TextBox2.Name = "Guna2TextBox2"
         Guna2TextBox2.PasswordChar = ChrW(0)
         Guna2TextBox2.PlaceholderText = ""
         Guna2TextBox2.ReadOnly = True
         Guna2TextBox2.SelectedText = ""
-        Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges24
-        Guna2TextBox2.Size = New Size(202, 61)
+        Guna2TextBox2.ShadowDecoration.CustomizableEdges = CustomizableEdges56
+        Guna2TextBox2.Size = New Size(249, 69)
         Guna2TextBox2.TabIndex = 69
         Guna2TextBox2.TextAlign = HorizontalAlignment.Center
         ' 
@@ -295,7 +656,7 @@ Partial Class Receive_Purchase_Order
         Label2.AutoSize = True
         Label2.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
         Label2.ForeColor = Color.Black
-        Label2.Location = New Point(1310, 25)
+        Label2.Location = New Point(585, 72)
         Label2.Name = "Label2"
         Label2.Size = New Size(91, 23)
         Label2.TabIndex = 68
@@ -307,7 +668,7 @@ Partial Class Receive_Purchase_Order
         Guna2TextBox1.BackColor = Color.Transparent
         Guna2TextBox1.BorderColor = Color.Black
         Guna2TextBox1.BorderRadius = 5
-        Guna2TextBox1.CustomizableEdges = CustomizableEdges25
+        Guna2TextBox1.CustomizableEdges = CustomizableEdges57
         Guna2TextBox1.DefaultText = ""
         Guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         Guna2TextBox1.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -318,14 +679,14 @@ Partial Class Receive_Purchase_Order
         Guna2TextBox1.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
         Guna2TextBox1.ForeColor = Color.Black
         Guna2TextBox1.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox1.Location = New Point(1404, 17)
+        Guna2TextBox1.Location = New Point(679, 64)
         Guna2TextBox1.Margin = New Padding(0)
         Guna2TextBox1.Name = "Guna2TextBox1"
         Guna2TextBox1.PasswordChar = ChrW(0)
         Guna2TextBox1.PlaceholderText = "Name"
         Guna2TextBox1.ReadOnly = True
         Guna2TextBox1.SelectedText = ""
-        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges26
+        Guna2TextBox1.ShadowDecoration.CustomizableEdges = CustomizableEdges58
         Guna2TextBox1.Size = New Size(232, 40)
         Guna2TextBox1.TabIndex = 67
         Guna2TextBox1.TextAlign = HorizontalAlignment.Center
@@ -336,7 +697,7 @@ Partial Class Receive_Purchase_Order
         Label4.AutoSize = True
         Label4.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
         Label4.ForeColor = Color.Black
-        Label4.Location = New Point(910, 25)
+        Label4.Location = New Point(933, 25)
         Label4.Name = "Label4"
         Label4.Size = New Size(147, 23)
         Label4.TabIndex = 66
@@ -348,7 +709,7 @@ Partial Class Receive_Purchase_Order
         txtSupplierName.BackColor = Color.Transparent
         txtSupplierName.BorderColor = Color.Black
         txtSupplierName.BorderRadius = 5
-        txtSupplierName.CustomizableEdges = CustomizableEdges27
+        txtSupplierName.CustomizableEdges = CustomizableEdges59
         txtSupplierName.DefaultText = ""
         txtSupplierName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtSupplierName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -359,14 +720,14 @@ Partial Class Receive_Purchase_Order
         txtSupplierName.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
         txtSupplierName.ForeColor = Color.Black
         txtSupplierName.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtSupplierName.Location = New Point(1060, 17)
+        txtSupplierName.Location = New Point(1083, 17)
         txtSupplierName.Margin = New Padding(0)
         txtSupplierName.Name = "txtSupplierName"
         txtSupplierName.PasswordChar = ChrW(0)
         txtSupplierName.PlaceholderText = "Name"
         txtSupplierName.ReadOnly = True
         txtSupplierName.SelectedText = ""
-        txtSupplierName.ShadowDecoration.CustomizableEdges = CustomizableEdges28
+        txtSupplierName.ShadowDecoration.CustomizableEdges = CustomizableEdges60
         txtSupplierName.Size = New Size(232, 40)
         txtSupplierName.TabIndex = 65
         txtSupplierName.TextAlign = HorizontalAlignment.Center
@@ -389,7 +750,7 @@ Partial Class Receive_Purchase_Order
         txtSupplierId.BackColor = Color.Transparent
         txtSupplierId.BorderColor = Color.Black
         txtSupplierId.BorderRadius = 5
-        txtSupplierId.CustomizableEdges = CustomizableEdges29
+        txtSupplierId.CustomizableEdges = CustomizableEdges61
         txtSupplierId.DefaultText = ""
         txtSupplierId.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
         txtSupplierId.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
@@ -400,454 +761,93 @@ Partial Class Receive_Purchase_Order
         txtSupplierId.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
         txtSupplierId.ForeColor = Color.Black
         txtSupplierId.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtSupplierId.Location = New Point(667, 17)
+        txtSupplierId.Location = New Point(679, 17)
         txtSupplierId.Margin = New Padding(0)
         txtSupplierId.Name = "txtSupplierId"
         txtSupplierId.PasswordChar = ChrW(0)
         txtSupplierId.PlaceholderText = "ID"
         txtSupplierId.ReadOnly = True
         txtSupplierId.SelectedText = ""
-        txtSupplierId.ShadowDecoration.CustomizableEdges = CustomizableEdges30
-        txtSupplierId.Size = New Size(222, 40)
+        txtSupplierId.ShadowDecoration.CustomizableEdges = CustomizableEdges62
+        txtSupplierId.Size = New Size(232, 40)
         txtSupplierId.TabIndex = 63
         txtSupplierId.TextAlign = HorizontalAlignment.Center
         ' 
-        ' cmbSupplier
+        ' cmbPO
         ' 
-        cmbSupplier.BackColor = Color.Transparent
-        cmbSupplier.BorderColor = Color.Black
-        cmbSupplier.BorderRadius = 5
-        cmbSupplier.CustomizableEdges = CustomizableEdges31
-        cmbSupplier.DrawMode = DrawMode.OwnerDrawFixed
-        cmbSupplier.DropDownStyle = ComboBoxStyle.DropDownList
-        cmbSupplier.FillColor = Color.AliceBlue
-        cmbSupplier.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        cmbSupplier.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        cmbSupplier.Font = New Font("Century Gothic", 12F, FontStyle.Bold)
-        cmbSupplier.ForeColor = Color.Black
-        cmbSupplier.ItemHeight = 30
-        cmbSupplier.Items.AddRange(New Object() {"select Purchase Order"})
-        cmbSupplier.Location = New Point(16, 17)
-        cmbSupplier.Name = "cmbSupplier"
-        cmbSupplier.ShadowDecoration.CustomizableEdges = CustomizableEdges32
-        cmbSupplier.Size = New Size(548, 36)
-        cmbSupplier.StartIndex = 0
-        cmbSupplier.TabIndex = 62
-        cmbSupplier.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' txtProductCode
-        ' 
-        txtProductCode.Animated = True
-        txtProductCode.BackColor = Color.Transparent
-        txtProductCode.BorderColor = Color.Black
-        txtProductCode.BorderRadius = 5
-        txtProductCode.CustomizableEdges = CustomizableEdges17
-        txtProductCode.DefaultText = ""
-        txtProductCode.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtProductCode.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtProductCode.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtProductCode.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtProductCode.FillColor = Color.AliceBlue
-        txtProductCode.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtProductCode.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        txtProductCode.ForeColor = Color.Black
-        txtProductCode.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtProductCode.Location = New Point(16, 157)
-        txtProductCode.Margin = New Padding(0)
-        txtProductCode.Name = "txtProductCode"
-        txtProductCode.PasswordChar = ChrW(0)
-        txtProductCode.PlaceholderText = "Code"
-        txtProductCode.SelectedText = ""
-        txtProductCode.ShadowDecoration.CustomizableEdges = CustomizableEdges18
-        txtProductCode.Size = New Size(167, 40)
-        txtProductCode.TabIndex = 75
-        txtProductCode.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label7
-        ' 
-        Label7.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label7.AutoSize = True
-        Label7.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label7.ForeColor = Color.Black
-        Label7.Location = New Point(31, 127)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(138, 23)
-        Label7.TabIndex = 74
-        Label7.Text = "Product Code"
-        ' 
-        ' txtProductName
-        ' 
-        txtProductName.Animated = True
-        txtProductName.BackColor = Color.Transparent
-        txtProductName.BorderColor = Color.Black
-        txtProductName.BorderRadius = 5
-        txtProductName.CustomizableEdges = CustomizableEdges15
-        txtProductName.DefaultText = ""
-        txtProductName.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtProductName.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtProductName.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtProductName.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtProductName.FillColor = Color.AliceBlue
-        txtProductName.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtProductName.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        txtProductName.ForeColor = Color.Black
-        txtProductName.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtProductName.Location = New Point(186, 157)
-        txtProductName.Margin = New Padding(0)
-        txtProductName.Name = "txtProductName"
-        txtProductName.PasswordChar = ChrW(0)
-        txtProductName.PlaceholderText = "Name"
-        txtProductName.ReadOnly = True
-        txtProductName.SelectedText = ""
-        txtProductName.ShadowDecoration.CustomizableEdges = CustomizableEdges16
-        txtProductName.Size = New Size(308, 40)
-        txtProductName.TabIndex = 77
-        txtProductName.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label8
-        ' 
-        Label8.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label8.AutoSize = True
-        Label8.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label8.ForeColor = Color.Black
-        Label8.Location = New Point(274, 127)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(143, 23)
-        Label8.TabIndex = 76
-        Label8.Text = "Product Name"
-        ' 
-        ' txtProductMRP
-        ' 
-        txtProductMRP.Animated = True
-        txtProductMRP.BackColor = Color.Transparent
-        txtProductMRP.BorderColor = Color.Black
-        txtProductMRP.BorderRadius = 5
-        txtProductMRP.CustomizableEdges = CustomizableEdges13
-        txtProductMRP.DefaultText = ""
-        txtProductMRP.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtProductMRP.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtProductMRP.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtProductMRP.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtProductMRP.FillColor = Color.AliceBlue
-        txtProductMRP.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtProductMRP.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        txtProductMRP.ForeColor = Color.Black
-        txtProductMRP.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtProductMRP.Location = New Point(497, 157)
-        txtProductMRP.Margin = New Padding(0)
-        txtProductMRP.Name = "txtProductMRP"
-        txtProductMRP.PasswordChar = ChrW(0)
-        txtProductMRP.PlaceholderText = "MRP"
-        txtProductMRP.SelectedText = ""
-        txtProductMRP.ShadowDecoration.CustomizableEdges = CustomizableEdges14
-        txtProductMRP.Size = New Size(167, 40)
-        txtProductMRP.TabIndex = 79
-        txtProductMRP.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label9
-        ' 
-        Label9.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label9.AutoSize = True
-        Label9.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label9.ForeColor = Color.Black
-        Label9.Location = New Point(518, 127)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(125, 23)
-        Label9.TabIndex = 78
-        Label9.Text = "Product MRP"
-        ' 
-        ' txtProductDis
-        ' 
-        txtProductDis.Animated = True
-        txtProductDis.BackColor = Color.Transparent
-        txtProductDis.BorderColor = Color.Black
-        txtProductDis.BorderRadius = 5
-        txtProductDis.CustomizableEdges = CustomizableEdges11
-        txtProductDis.DefaultText = ""
-        txtProductDis.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtProductDis.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtProductDis.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtProductDis.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtProductDis.FillColor = Color.AliceBlue
-        txtProductDis.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtProductDis.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        txtProductDis.ForeColor = Color.Black
-        txtProductDis.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtProductDis.Location = New Point(667, 157)
-        txtProductDis.Margin = New Padding(0)
-        txtProductDis.Name = "txtProductDis"
-        txtProductDis.PasswordChar = ChrW(0)
-        txtProductDis.PlaceholderText = "Dis"
-        txtProductDis.SelectedText = ""
-        txtProductDis.ShadowDecoration.CustomizableEdges = CustomizableEdges12
-        txtProductDis.Size = New Size(167, 40)
-        txtProductDis.TabIndex = 81
-        txtProductDis.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label10
-        ' 
-        Label10.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label10.AutoSize = True
-        Label10.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label10.ForeColor = Color.Black
-        Label10.Location = New Point(694, 127)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(112, 23)
-        Label10.TabIndex = 80
-        Label10.Text = "Product Dis"
-        ' 
-        ' txtSaleRate
-        ' 
-        txtSaleRate.Animated = True
-        txtSaleRate.BackColor = Color.Transparent
-        txtSaleRate.BorderColor = Color.Black
-        txtSaleRate.BorderRadius = 5
-        txtSaleRate.CustomizableEdges = CustomizableEdges9
-        txtSaleRate.DefaultText = ""
-        txtSaleRate.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtSaleRate.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtSaleRate.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtSaleRate.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtSaleRate.FillColor = Color.AliceBlue
-        txtSaleRate.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtSaleRate.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        txtSaleRate.ForeColor = Color.Black
-        txtSaleRate.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtSaleRate.Location = New Point(837, 157)
-        txtSaleRate.Margin = New Padding(0)
-        txtSaleRate.Name = "txtSaleRate"
-        txtSaleRate.PasswordChar = ChrW(0)
-        txtSaleRate.PlaceholderText = "Sale Rate"
-        txtSaleRate.SelectedText = ""
-        txtSaleRate.ShadowDecoration.CustomizableEdges = CustomizableEdges10
-        txtSaleRate.Size = New Size(167, 40)
-        txtSaleRate.TabIndex = 83
-        txtSaleRate.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label11
-        ' 
-        Label11.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label11.AutoSize = True
-        Label11.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label11.ForeColor = Color.Black
-        Label11.Location = New Point(873, 127)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(97, 23)
-        Label11.TabIndex = 82
-        Label11.Text = "Sale Rate"
-        ' 
-        ' txtTotalCost
-        ' 
-        txtTotalCost.Animated = True
-        txtTotalCost.BackColor = Color.Transparent
-        txtTotalCost.BorderColor = Color.Black
-        txtTotalCost.BorderRadius = 5
-        txtTotalCost.CustomizableEdges = CustomizableEdges7
-        txtTotalCost.DefaultText = ""
-        txtTotalCost.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtTotalCost.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtTotalCost.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtTotalCost.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtTotalCost.FillColor = Color.AliceBlue
-        txtTotalCost.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtTotalCost.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        txtTotalCost.ForeColor = Color.Black
-        txtTotalCost.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtTotalCost.Location = New Point(1007, 157)
-        txtTotalCost.Margin = New Padding(0)
-        txtTotalCost.Name = "txtTotalCost"
-        txtTotalCost.PasswordChar = ChrW(0)
-        txtTotalCost.PlaceholderText = "Total Cost"
-        txtTotalCost.SelectedText = ""
-        txtTotalCost.ShadowDecoration.CustomizableEdges = CustomizableEdges8
-        txtTotalCost.Size = New Size(167, 40)
-        txtTotalCost.TabIndex = 85
-        txtTotalCost.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label12
-        ' 
-        Label12.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label12.AutoSize = True
-        Label12.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label12.ForeColor = Color.Black
-        Label12.Location = New Point(1042, 127)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(100, 23)
-        Label12.TabIndex = 84
-        Label12.Text = "Total Cost"
-        ' 
-        ' txtQty
-        ' 
-        txtQty.Animated = True
-        txtQty.BackColor = Color.Transparent
-        txtQty.BorderColor = Color.Black
-        txtQty.BorderRadius = 5
-        txtQty.CustomizableEdges = CustomizableEdges5
-        txtQty.DefaultText = ""
-        txtQty.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        txtQty.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        txtQty.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtQty.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        txtQty.FillColor = Color.AliceBlue
-        txtQty.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtQty.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        txtQty.ForeColor = Color.Black
-        txtQty.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        txtQty.Location = New Point(1177, 157)
-        txtQty.Margin = New Padding(0)
-        txtQty.Name = "txtQty"
-        txtQty.PasswordChar = ChrW(0)
-        txtQty.PlaceholderText = "Qty"
-        txtQty.SelectedText = ""
-        txtQty.ShadowDecoration.CustomizableEdges = CustomizableEdges6
-        txtQty.Size = New Size(167, 40)
-        txtQty.TabIndex = 87
-        txtQty.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label13
-        ' 
-        Label13.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label13.AutoSize = True
-        Label13.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label13.ForeColor = Color.Black
-        Label13.Location = New Point(1238, 127)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(43, 23)
-        Label13.TabIndex = 86
-        Label13.Text = "Qty"
-        ' 
-        ' Guna2TextBox5
-        ' 
-        Guna2TextBox5.Animated = True
-        Guna2TextBox5.BackColor = Color.Transparent
-        Guna2TextBox5.BorderColor = Color.Black
-        Guna2TextBox5.BorderRadius = 5
-        Guna2TextBox5.CustomizableEdges = CustomizableEdges3
-        Guna2TextBox5.DefaultText = ""
-        Guna2TextBox5.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox5.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox5.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox5.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox5.FillColor = Color.AliceBlue
-        Guna2TextBox5.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox5.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        Guna2TextBox5.ForeColor = Color.Black
-        Guna2TextBox5.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox5.Location = New Point(1347, 157)
-        Guna2TextBox5.Margin = New Padding(0)
-        Guna2TextBox5.Name = "Guna2TextBox5"
-        Guna2TextBox5.PasswordChar = ChrW(0)
-        Guna2TextBox5.PlaceholderText = "Mfg. Date"
-        Guna2TextBox5.SelectedText = ""
-        Guna2TextBox5.ShadowDecoration.CustomizableEdges = CustomizableEdges4
-        Guna2TextBox5.Size = New Size(167, 40)
-        Guna2TextBox5.TabIndex = 89
-        Guna2TextBox5.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label14
-        ' 
-        Label14.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label14.AutoSize = True
-        Label14.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label14.ForeColor = Color.Black
-        Label14.Location = New Point(1382, 127)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(99, 23)
-        Label14.TabIndex = 88
-        Label14.Text = "Mfg. Date"
-        ' 
-        ' Guna2TextBox6
-        ' 
-        Guna2TextBox6.Animated = True
-        Guna2TextBox6.BackColor = Color.Transparent
-        Guna2TextBox6.BorderColor = Color.Black
-        Guna2TextBox6.BorderRadius = 5
-        Guna2TextBox6.CustomizableEdges = CustomizableEdges1
-        Guna2TextBox6.DefaultText = ""
-        Guna2TextBox6.DisabledState.BorderColor = Color.FromArgb(CByte(208), CByte(208), CByte(208))
-        Guna2TextBox6.DisabledState.FillColor = Color.FromArgb(CByte(226), CByte(226), CByte(226))
-        Guna2TextBox6.DisabledState.ForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox6.DisabledState.PlaceholderForeColor = Color.FromArgb(CByte(138), CByte(138), CByte(138))
-        Guna2TextBox6.FillColor = Color.AliceBlue
-        Guna2TextBox6.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox6.Font = New Font("Century Gothic", 13F, FontStyle.Bold)
-        Guna2TextBox6.ForeColor = Color.Black
-        Guna2TextBox6.HoverState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
-        Guna2TextBox6.Location = New Point(1517, 157)
-        Guna2TextBox6.Margin = New Padding(0)
-        Guna2TextBox6.Name = "Guna2TextBox6"
-        Guna2TextBox6.PasswordChar = ChrW(0)
-        Guna2TextBox6.PlaceholderText = "Exp. Date"
-        Guna2TextBox6.SelectedText = ""
-        Guna2TextBox6.ShadowDecoration.CustomizableEdges = CustomizableEdges2
-        Guna2TextBox6.Size = New Size(167, 40)
-        Guna2TextBox6.TabIndex = 91
-        Guna2TextBox6.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' Label15
-        ' 
-        Label15.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label15.AutoSize = True
-        Label15.Font = New Font("Century Gothic", 14F, FontStyle.Bold)
-        Label15.ForeColor = Color.Black
-        Label15.Location = New Point(1553, 127)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(98, 23)
-        Label15.TabIndex = 90
-        Label15.Text = "Exp. Date"
+        cmbPO.BackColor = Color.Transparent
+        cmbPO.BorderColor = Color.Black
+        cmbPO.BorderRadius = 5
+        cmbPO.CustomizableEdges = CustomizableEdges63
+        cmbPO.DrawMode = DrawMode.OwnerDrawFixed
+        cmbPO.DropDownStyle = ComboBoxStyle.DropDownList
+        cmbPO.FillColor = Color.AliceBlue
+        cmbPO.FocusedColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        cmbPO.FocusedState.BorderColor = Color.FromArgb(CByte(94), CByte(148), CByte(255))
+        cmbPO.Font = New Font("Century Gothic", 12F, FontStyle.Bold)
+        cmbPO.ForeColor = Color.Black
+        cmbPO.ItemHeight = 30
+        cmbPO.Items.AddRange(New Object() {"select Purchase Order"})
+        cmbPO.Location = New Point(16, 17)
+        cmbPO.Name = "cmbPO"
+        cmbPO.ShadowDecoration.CustomizableEdges = CustomizableEdges64
+        cmbPO.Size = New Size(548, 36)
+        cmbPO.StartIndex = 0
+        cmbPO.TabIndex = 62
+        cmbPO.TextAlign = HorizontalAlignment.Center
         ' 
         ' Item_List
         ' 
         Item_List.AllowUserToDeleteRows = False
         Item_List.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = Color.White
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        DataGridViewCellStyle1.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = Color.Gainsboro
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText
-        Item_List.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = Color.White
+        DataGridViewCellStyle6.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        DataGridViewCellStyle6.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = Color.Gainsboro
+        DataGridViewCellStyle6.SelectionForeColor = SystemColors.ControlText
+        Item_List.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
         Item_List.BorderStyle = BorderStyle.FixedSingle
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = Color.MidnightBlue
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        DataGridViewCellStyle2.ForeColor = Color.White
-        DataGridViewCellStyle2.SelectionBackColor = Color.MidnightBlue
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        Item_List.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = Color.MidnightBlue
+        DataGridViewCellStyle7.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        DataGridViewCellStyle7.ForeColor = Color.White
+        DataGridViewCellStyle7.SelectionBackColor = Color.MidnightBlue
+        DataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = DataGridViewTriState.True
+        Item_List.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         Item_List.ColumnHeadersHeight = 40
         Item_List.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Item_List.Columns.AddRange(New DataGridViewColumn() {Column6, Column1, Column2, Column7, Column3, Column4, DataGridViewTextBoxColumn1, Column5})
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = Color.White
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 11F)
-        DataGridViewCellStyle3.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle3.SelectionBackColor = Color.White
-        DataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
-        Item_List.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = Color.White
+        DataGridViewCellStyle8.Font = New Font("Segoe UI", 11F)
+        DataGridViewCellStyle8.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle8.SelectionBackColor = Color.White
+        DataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(CByte(71), CByte(69), CByte(94))
+        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.False
+        Item_List.DefaultCellStyle = DataGridViewCellStyle8
         Item_List.GridColor = Color.FromArgb(CByte(231), CByte(229), CByte(255))
         Item_List.Location = New Point(24, 349)
         Item_List.Name = "Item_List"
         Item_List.ReadOnly = True
         Item_List.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = Color.White
-        DataGridViewCellStyle4.Font = New Font("Segoe UI", 1F)
-        DataGridViewCellStyle4.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = Color.White
-        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.True
-        Item_List.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = Color.White
+        DataGridViewCellStyle9.Font = New Font("Segoe UI", 1F)
+        DataGridViewCellStyle9.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle9.SelectionBackColor = Color.White
+        DataGridViewCellStyle9.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle9.WrapMode = DataGridViewTriState.True
+        Item_List.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
         Item_List.RowHeadersVisible = False
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle5.BackColor = Color.White
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        DataGridViewCellStyle5.ForeColor = SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = Color.Gainsboro
-        DataGridViewCellStyle5.SelectionForeColor = SystemColors.ControlText
-        Item_List.RowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle10.BackColor = Color.White
+        DataGridViewCellStyle10.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        DataGridViewCellStyle10.ForeColor = SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = Color.Gainsboro
+        DataGridViewCellStyle10.SelectionForeColor = SystemColors.ControlText
+        Item_List.RowsDefaultCellStyle = DataGridViewCellStyle10
         Item_List.RowTemplate.Height = 30
         Item_List.Size = New Size(1457, 418)
         Item_List.TabIndex = 32
@@ -943,7 +943,7 @@ Partial Class Receive_Purchase_Order
     Friend WithEvents Guna2ShadowPanel9 As Guna.UI2.WinForms.Guna2ShadowPanel
     Friend WithEvents Label1 As Label
     Friend WithEvents Guna2ShadowPanel1 As Guna.UI2.WinForms.Guna2ShadowPanel
-    Friend WithEvents cmbSupplier As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents cmbPO As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtSupplierName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label3 As Label
