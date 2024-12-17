@@ -93,7 +93,7 @@ Public Class dashboardvb
         FetchCurrentMonthGoal()
         Dim firstDate As DateTime = New DateTime(DateTime.Now.Year, DateTime.Now.Month, 1)
         Dim lastDate As DateTime = firstDate.AddMonths(1).AddDays(-1)
-  
+
         Label15.Text = firstDate.ToString("dd/MM/yyyy")
         Label16.Text = lastDate.ToString("dd/MM/yyyy")
         Label5.Text = DateTime.Now.ToString("dd/MM/yyyy")
@@ -341,5 +341,7 @@ Fuction : " & ex.Message)
         End Try
     End Sub
 
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
 
+    End Sub
 End Class

@@ -55,3 +55,4 @@ C:\Users\jadha\source\repos\POS for Retail shop\POS for Retail shop\obj\Debug\ne
 C:\Users\jadha\source\repos\POS for Retail shop\POS for Retail shop\obj\Debug\net8.0-windows7.0\POS_for_Retail_shop.Generate_purchase_order.resources
 C:\Users\jadha\source\repos\POS for Retail shop\POS for Retail shop\obj\Debug\net8.0-windows7.0\POS_for_Retail_shop.Supplier_Master.resources
 C:\Users\jadha\source\repos\POS for Retail shop\POS for Retail shop\obj\Debug\net8.0-windows7.0\POS_for_Retail_shop.Receive_Purchase_Order.resources
+C:\Users\jadha\source\repos\POS for Retail shop\POS for Retail shop\obj\Debug\net8.0-windows7.0\POS_for_Retail_shop.Product_list.resources

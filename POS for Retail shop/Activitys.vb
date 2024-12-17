@@ -87,9 +87,6 @@ Public Class Activitys
     End Sub
 
     Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles Guna2Button4.Click
-        Dim mdidorm As New Generate_purchase_order(userId)
-        mdidorm.Show()
-        mdidorm.WindowState = FormWindowState.Maximized
-        mdidorm.BringToFront()
+
     End Sub
 End Class

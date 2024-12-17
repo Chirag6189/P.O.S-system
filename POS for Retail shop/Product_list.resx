@@ -117,34 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column7.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="DataGridViewTextBoxColumn1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Mfg_date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Exp_date.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="order_qty.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="invalue.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAABA9JREFUeF7tmjtoFFEUhrNJsPNBQsgm2U0gikXwUUTFSlTw0QpaqI0iWGljY5Mq
+        FnaCEJBArGzTBQISEAUlQTRWRlMERDttVBR8Rr+TPbtMrmd3Z3cnM7Pr/eEn685/z/3P2fuaGds8PDw8
+        PDw8PDw2EIODg325XG53X1/f6MDAwB4+D/B1pnC1BdHf378TjpHwA/5+gn8MfoWP0dyQomjT5kY2mz1J
+        Ug8DSdbCZxTiNGHaC9GaCAzpHSRw30moLjIi5inEXg2dfmD4LMY/u4k0QmJ+g1e0i/QCk9cxvOomEBWJ
+        P0E36ZwSGBxzDW8EKcId7TI9wJQM+1p/+Z/wA21/ON+H4TXtOnnoghdmzkuBZkn4EotajqaloSznAnCO
+        69Pwl+rLUorGDrNfmycLDFVd7TG8QNIHtUlF9Pb27kI/Z8UJEs0i8o5Cq4Sg+7xpMMCpkZGRTdokLNpp
+        dxNWm1YXVJ8MMPDIMbSO/Ep3VVoXaD9uxS2S68vIkjlCY0COt6YxIeYW6vjlXWSIM2PFL5JReEi18YLO
+        K217q2HnfDXk8/ntFOG70ccauSZng/hBx3JjY5qCsyqLBMSbcuKXiI/XKosXdF7urk54UWWRgCRPGH2U
+        2NXVtUWl8UD2bctIgHmVRgJZSyhC2QMT10ZVGg/kYYZlRPkTSeT7M0m+NfpaI9eOqyweUIADlhHle5VF
+        CuI+d/opkQKcUlk8YIXfYxkRylBFEvkdG7HfuH0ViZ8jKosHdJizjBTZ09OTVWlU6KSwZbdC/MT+wCRD
+        x19cI0Vi9rzqIgEJHrb6Uf4eGhraptL4QJJPDDNFTqssEhDvthM/yJcqixcU4IZhpshfclen0obASZBw
+        5UcbnFRpvJB5Z5gpkQLNIWt4MSTWPTd2kDI9VBo/MPDMNeTwpkrrAkW8asQMcgVZci9UqP5pw1SQqyQx
+        jrRmk7S7Qnt5bGbFXSOayypPDO2YmLfMBYlmRu7qtE1F6JyvOOyVS8g7C60ShKwFJPjNMLiOaGQfn+Lv
+        CeM5QYdudbLaV1rwSiTOYiLbnwXMyHA1jVpE/wO+47OsIW/4XPaQU4VP01SEW4bBDSf9LnJv0qU2EoWs
+        BxOWyRiYnpGAmWsUop6XHY0yPUWQlxYyNA2T9XCJWC+M7y2mpwigA0MXML/smAzLFdrKPt8pSfHvp871
+        ckxVEQQZeXRNMrI+vHLMBikvQV7CST3erjs8NXsRSuju7t5MQfZRkGMkegYelbNEGMMtU4RGMDw8vJXi
+        LRgJ/0N0qdkiI4UvAqh1OsjU06atgxqLMKXNWgs1TIdPyJvvv9yFQdiREPsrtDgRogjy9Ki1UaUIkb6w
+        TS1ktSdZefDyURNf+W+Sd5Bp6Tnv4eHh4eHhETHa2v4CKfsZP7ZJGkUAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

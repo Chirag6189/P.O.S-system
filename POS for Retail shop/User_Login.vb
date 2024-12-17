@@ -71,7 +71,7 @@ Public Class User_Login
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles Guna2Button2.Click
         'MessageBox.Show("for 'create account' login on Admin Id", "create account")
-        Dim mdidorm As New Generate_purchase_order("cmj")
+        Dim mdidorm As New Receive_Purchase_Order("cmj")
         mdidorm.Show()
         mdidorm.WindowState = FormWindowState.Maximized
         mdidorm.BringToFront()

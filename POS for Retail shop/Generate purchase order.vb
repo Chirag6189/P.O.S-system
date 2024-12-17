@@ -366,6 +366,15 @@ Public Class Generate_purchase_order
     End Sub
 
     Private Sub Guna2Button3_Click(sender As Object, e As EventArgs) Handles Guna2Button3.Click
+
+        If (Guna2Button3.Text = "Clear and New") Then
+            Dim mdidorm As New Generate_purchase_order(userId)
+            mdidorm.Show()
+            mdidorm.WindowState = FormWindowState.Maximized
+            mdidorm.BringToFront()
+            Me.Close()
+        End If
+
         If String.IsNullOrEmpty(txt_tax.Text) And String.IsNullOrEmpty(txt_shipping.Text) Then
             Dim dilog1 As New Dialog1("Please enter tax and shipping/other charges!", My.Resources.icons8_information_48)
             dilog1.Text = "Enter bill charges"
@@ -384,6 +393,7 @@ Public Class Generate_purchase_order
             dilog1.Text = "Print copy"
             If dilog1.ShowDialog = DialogResult.OK Then
                 Print(PO_No)
+                Guna2Button3.Text = "Clear and New"
             End If
 
         End If
@@ -651,8 +661,8 @@ Public Class Generate_purchase_order
 
             For Each row As DataGridViewRow In Item_List.Rows
                 If Not row.IsNewRow Then
-                    Dim itemQuery As String = "insert into purchase_order_items(PO_no, prod_id, prod_name, mrp, sale_rate, dis, cost, qty)" &
-                                              "values (@PO_no, @prod_id, @prod_name, @mrp, @sale_rate, @dis, @cost, @qty)"
+                    Dim itemQuery As String = "insert into purchase_order_items(PO_no, prod_id, prod_name, mrp, sale_rate, dis, cost, qty, received_qty, panding_qty)" &
+                                              "values (@PO_no, @prod_id, @prod_name, @mrp, @sale_rate, @dis, @cost, @qty, @received_qty, @panding_qty)"
                     Dim itemCmd As New SqlCommand(itemQuery, con, transaction)
                     itemCmd.Parameters.AddWithValue("@PO_no", PO_No)
                     itemCmd.Parameters.AddWithValue("@prod_id", row.Cells("Column6").Value)
@@ -662,6 +672,8 @@ Public Class Generate_purchase_order
                     itemCmd.Parameters.AddWithValue("@dis", row.Cells("Column4").Value)
                     itemCmd.Parameters.AddWithValue("@cost", row.Cells("Column7").Value)
                     itemCmd.Parameters.AddWithValue("@qty", row.Cells("Column2").Value)
+                    itemCmd.Parameters.AddWithValue("@received_qty", "0")
+                    itemCmd.Parameters.AddWithValue("@panding_qty", row.Cells("Column2").Value)
                     itemCmd.ExecuteNonQuery()
 
                 End If

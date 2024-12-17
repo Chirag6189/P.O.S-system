@@ -46,6 +46,9 @@
     <Compile Update="ProductMaster.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Product_list.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Profile.vb">
       <SubType>Form</SubType>
     </Compile>
